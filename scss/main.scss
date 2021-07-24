@@ -13,7 +13,8 @@ $pink: #f55771;
 $active: #181942;
 $main-background: #181942;
 $CARD-lINEAR: linear-gradient(#4d4f95, #2b2d66);
-$gray: gray;
+$gray: #757676;
+$dark-bg:#252827;
 
 $theme-colors: (
   "primary": $primary,
@@ -116,3 +117,8 @@ $theme-colors: (
 // scss-docs-end import-stack
 
 @import "bootstrap/scss/bootstrap.scss";
+@import "/scss/navbar.scss";
+@import "/scss/footer.scss";
+@import "/scss/login.scss";
+@import "/scss/utilities.scss";
+

@@ -1,0 +1,18 @@
+a{
+    cursor:pointer;
+}
+nav{ 
+    background: $gray;
+    height:80px;
+}
+
+nav h1{
+    color:$gold;
+    font-size: 18px;
+}
+nav button{
+    background: $gold!important;
+}
+.nav-menu a:hover{
+    color: $gold!important;
+}
