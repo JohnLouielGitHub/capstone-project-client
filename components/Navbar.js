@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 
@@ -8,8 +9,10 @@ const Navbar = () => {
            <div className="row h-100">
                 <div className="col-lg-4">
                     <div className="logo d-flex h-100 justify-content-start align-items-lg-center">
-                        <img src="/Logo.png" className="me-2" />
-                        <h1 className="mb-0"> Men of Law Corporate</h1>
+                        <div className="me-2 mb-0">
+                        <Image src="/Logo.png"  width={60} height={60}/>
+                        </div>
+                        <h1 className="mb-0 ms-1"> Men of Law Corporate</h1>
                     </div>
                 </div>
                 <div className="col-lg-6">

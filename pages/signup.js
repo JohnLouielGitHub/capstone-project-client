@@ -53,11 +53,16 @@ const Signup = () => {
                                     </div>
                                     <div className="col-12">
                                         
+                                    <div className="col-12">
+                                        <div className="mb-3">
+                                            <button className="btn dark-bg text-white w-100" type="button">Sign-up</button>
+                                        </div>
                                         <div className="d-flex gap-3">                           
-                                            <button className="btn dark-bg text-white w-50" type="button">Login with Google</button>
-                                            <button className="btn dark-bg text-white w-50" type="button">Login with Facebook</button>
+                                            <button className="btn dark-bg text-white w-50" type="button">Sign-up with Google</button>
+                                            <button className="btn dark-bg text-white w-50" type="button">Sign-up with Facebook</button>
                                         </div>
                                         {/* <button type="submit" className="btn btn-dark float-end">Login</button> */}
+                                    </div>
                                     </div>   
                                 </form>
                                 <hr className="mt-4"/>

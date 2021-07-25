@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const Footer = () => {
     return ( 
         <footer className="gray-bg mt-5 py-3">
@@ -15,15 +17,16 @@ const Footer = () => {
                 </div>
                 <div className="col offset-2 col-lg-4">
                     <div className="h-100 d-flex justify-content-center align-items-center">
-                    <img  className=" " src="./Logo.svg" alt="" />
+                    <Image  src="/Logo.svg" alt="Logo" width={200}
+      height={200}  />
                     </div>
                 </div>
                 <div className="col offset-2 col-lg-2 ">
                     <div className="d-flex flex-column">
-                        <a className=" text-decoration-none text-white"><img className="me-1 footer-icon"src="/instagram.svg"/>Instagram</a>
-                        <a className=" text-decoration-none text-white"><img className="me-1 footer-icon"src="/linkedin.svg"/>Linked In</a>
-                        <a className=" text-decoration-none text-white"><img className="me-1 footer-icon"src="/facebook.svg"/>Facebook</a>
-                        <a className=" text-decoration-none text-white"><img className="me-1 footer-icon"src="/twitter.svg"/>Twitter</a>       
+                        <a className=" text-decoration-none text-white"><Image className=" footer-icon" src="/instagram.svg" alt="Instagram-icon" width={16} height={16}/>Instagram</a>
+                        <a className=" text-decoration-none text-white"><Image className=" footer-icon" src="/linkedin.svg" alt="LinkedIn-icon" width={16} height={16}/>Linked In</a>
+                        <a className=" text-decoration-none text-white"><Image className=" footer-icon" src="/facebook.svg" alt="Facebook-icon" width={16} height={16}/>Facebook</a>
+                        <a className=" text-decoration-none text-white"><Image className=" footer-icon" src="/twitter.svg" alt="Twitter-icon" width={16} height={16}/>Twitter</a>       
                     </div>
                 </div>   
             </div>
