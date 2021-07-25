@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+
 const Navbar = () => {
     return ( 
         <nav >
@@ -7,7 +8,7 @@ const Navbar = () => {
            <div className="row h-100">
                 <div className="col-lg-4">
                     <div className="logo d-flex h-100 justify-content-start align-items-lg-center">
-                        <img src="/Logo Men of law corporate.png" className="me-2"/>
+                        <img src="/Logo.png" className="me-2" />
                         <h1 className="mb-0"> Men of Law Corporate</h1>
                     </div>
                 </div>

@@ -4,7 +4,7 @@
 // }
 .underline{ 
     height: 4px;
-    background: $gold;
+    
 }
 .login-container{
     border-left: 3px solid $gold;
@@ -17,4 +17,9 @@
 }
 .login-text-title{
     font-size: 48px;
+}
+.footer-icon{
+    width:16px;
+    height: 16px;
+    line-height: 30px;
 }

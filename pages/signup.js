@@ -18,7 +18,7 @@ const Signup = () => {
                             <div className="login-container ">
                             <div className="form-title-container px-5 p-4 dark-bg">
                                 <h2 className="lexyellow mb-3">Register</h2>
-                                <span className="underline d-block  rounded-pill w-100 px-4"></span>
+                                <span className="underline d-block bg-gold rounded-pill w-100 px-4"></span>
                             </div>
                             <div className="login-form gray-bg p-5">
                                 <form action="gray-bg" method="" className="row g-3 p-4">
@@ -46,7 +46,7 @@ const Signup = () => {
                                         <div className="d-flex justify-content-between">
                                             <div className="form-check">
                                                 <input className="form-check-input" type="checkbox" id="rememberMe"/>
-                                                <label className="form-check-label" for="rememberMe"> Remember me</label>
+                                                <label className="form-check-label" htmlFor="rememberMe"> Remember me</label>
                                             </div>
                                             
                                         </div>
@@ -70,6 +70,7 @@ const Signup = () => {
                        
             </div>
         </div>
+        
         </>
      );
 }

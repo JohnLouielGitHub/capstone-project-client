@@ -20,7 +20,7 @@ const Login = () => {
                             <div className="login-container ">
                             <div className="form-title-container px-5 p-4 dark-bg">
                                 <h2 className="lexyellow mb-3">Login</h2>
-                                <span className="underline d-block  rounded-pill w-100"></span>
+                                <span className="underline d-block bg-gold rounded-pill w-100"></span>
                             </div>
                             <div className="login-form gray-bg p-5">
                                 <form action="gray-bg" method="" className="row g-3 p-4">
@@ -37,7 +37,7 @@ const Login = () => {
                                         <div className="d-flex justify-content-between">
                                             <div className="form-check">
                                                 <input className="form-check-input" type="checkbox" id="rememberMe"/>
-                                                <label className="form-check-label" for="rememberMe"> Remember me</label>
+                                                <label className="form-check-label" htmlFor="rememberMe"> Remember me</label>
                                             </div>
                                             <div>
                                                 <a>Forgot password?</a>
@@ -66,6 +66,7 @@ const Login = () => {
             </div>
             
         </div>
+       
         
         </>
      );
