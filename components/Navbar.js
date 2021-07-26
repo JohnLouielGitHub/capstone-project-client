@@ -27,7 +27,9 @@ const Navbar = () => {
                 </div>
                 <div className="col-lg-2">
                     <div className="d-flex h-100 justify-content-end align-items-lg-center">
+                    <Link href="/login">
                     <button className=" btn rounded-pill py-1 px-4">Login</button>
+                        </Link>
                     </div>
                 </div>
             </div>
