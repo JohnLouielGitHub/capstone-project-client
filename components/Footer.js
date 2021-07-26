@@ -23,15 +23,18 @@ const Footer = () => {
                 </div>
                 <div className="col offset-2 col-lg-2 ">
                     <div className="d-flex flex-column">
-                        <a className=" text-decoration-none text-white px-5"><Image src="/instagram.svg" alt="Instagram-icon" width={16} height={16}/><span className="ms-2">Instagram</span></a>
-                        <a className=" text-decoration-none text-white px-5"><Image src="/linkedin.svg" alt="LinkedIn-icon" width={16} height={16}/><span className="ms-2">Linked in</span></a>
-                        <a className=" text-decoration-none text-white px-5"><Image src="/facebook.svg" alt="Facebook-icon" width={16} height={16}/><span className="ms-2">facebook</span></a>
-                        <a className=" text-decoration-none text-white px-5"><Image src="/twitter.svg" alt="Twitter-icon" width={16} height={16}/><span className="ms-2">Twitter</span></a>       
+                        <a className=" text-decoration-none text-white px-2"><Image src="/instagram.svg" alt="Instagram-icon" width={16} height={16}/><span className="ms-2">Instagram</span></a>
+                        <a className=" text-decoration-none text-white px-2"><Image src="/linkedin.svg" alt="LinkedIn-icon" width={16} height={16}/><span className="ms-2">Linked in</span></a>
+                        <a className=" text-decoration-none text-white px-2"><Image src="/facebook.svg" alt="Facebook-icon" width={16} height={16}/><span className="ms-2">facebook</span></a>
+                        <a className=" text-decoration-none text-white px-2"><Image src="/twitter.svg" alt="Twitter-icon" width={16} height={16}/><span className="ms-2">Twitter</span></a>       
                     </div>
                 </div>   
-            </div>
-            <p className="mt-5 text-white">All rights reserved. Copyright 2021Ⓒ Lexweb Inc.</p>
+            </div> 
         </div>
+            <hr className="mt-4 lexyellow" />
+            <div className="container">
+            <p className="mt-1 text-white">All rights reserved. Copyright 2021Ⓒ Lexweb Inc.</p>
+            </div>
         </footer>
      );
 }

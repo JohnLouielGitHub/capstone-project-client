@@ -38,7 +38,7 @@ const About = () => {
                 </div>
             </div>
         </section>
-        <div className="dark-bg p-5 mb-0">&nbsp;</div>
+        <div className="dark-bg p-5">&nbsp;</div>
         </>
      );
 }
