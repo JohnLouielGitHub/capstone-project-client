@@ -3,7 +3,7 @@ import Image from "next/dist/client/image";
 
 const Login = () => {
   return (
-    <>
+    <div className="my-5">
       <div className="container mt-lg-4">
         <div className="row">
           <div className="col-lg-6 p-0">
@@ -112,7 +112,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

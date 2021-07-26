@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Footer = () => {
     return ( 
-        <footer className="gray-bg mt-5 py-3">
+        <footer className="gray-bg py-3">
             <div className="container ">
             <div className="row">
                 <div className="col  col-lg-2 ">
@@ -23,10 +23,10 @@ const Footer = () => {
                 </div>
                 <div className="col offset-2 col-lg-2 ">
                     <div className="d-flex flex-column">
-                        <a className=" text-decoration-none text-white"><Image className=" footer-icon" src="/instagram.svg" alt="Instagram-icon" width={16} height={16}/>Instagram</a>
-                        <a className=" text-decoration-none text-white"><Image className=" footer-icon" src="/linkedin.svg" alt="LinkedIn-icon" width={16} height={16}/>Linked In</a>
-                        <a className=" text-decoration-none text-white"><Image className=" footer-icon" src="/facebook.svg" alt="Facebook-icon" width={16} height={16}/>Facebook</a>
-                        <a className=" text-decoration-none text-white"><Image className=" footer-icon" src="/twitter.svg" alt="Twitter-icon" width={16} height={16}/>Twitter</a>       
+                        <a className=" text-decoration-none text-white px-5"><Image src="/instagram.svg" alt="Instagram-icon" width={16} height={16}/><span className="ms-2">Instagram</span></a>
+                        <a className=" text-decoration-none text-white px-5"><Image src="/linkedin.svg" alt="LinkedIn-icon" width={16} height={16}/><span className="ms-2">Linked in</span></a>
+                        <a className=" text-decoration-none text-white px-5"><Image src="/facebook.svg" alt="Facebook-icon" width={16} height={16}/><span className="ms-2">facebook</span></a>
+                        <a className=" text-decoration-none text-white px-5"><Image src="/twitter.svg" alt="Twitter-icon" width={16} height={16}/><span className="ms-2">Twitter</span></a>       
                     </div>
                 </div>   
             </div>

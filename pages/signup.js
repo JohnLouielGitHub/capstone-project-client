@@ -1,8 +1,9 @@
 import Link from "next/dist/client/link";
+import Image from "next/dist/client/image";
 
 const Signup = () => {
   return (
-    <>
+    <div className="my-5">
       <div className="container mt-lg-4">
         <div className="row">
           <div className="col-lg-6 p-0">
@@ -123,7 +124,7 @@ const Signup = () => {
                           Sign-up with Facebook
                         </button>
                       </div>
-                      {/* <button type="submit" className="btn btn-dark float-end">Login</button> */}
+                      
                     </div>
                   </div>
                 </form>
@@ -141,7 +142,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,4 +1,7 @@
 
+p{
+    line-height: 30px;
+}
 .lexyellow{
     color:$gold;
 }
@@ -14,4 +17,16 @@
 
 .overlay-dark{
     background: linear-gradient(0deg, rgba(40, 37, 37, 0.5), rgba(40, 37, 37, 0.5));
+    z-index:2;
 }
+
+//ABOUT PAGE
+.about-overlay{  
+    top:0;
+    z-index:1;
+}
+
+.about-logo{
+    z-index:0;
+}
+
