@@ -17,125 +17,116 @@ const Signup = () => {
                   advice.
                 </p>
               </div>
-              <div
-                className="overlay-dark"
-                style={{ zIndex: 2 }}
-                layout="fill"
-              ></div>
-              <Image
-                style={{ zIndex: 1 }}
-                src="https://previews.123rf.com/images/opolja/opolja1311/opolja131100148/23580117-a-business-man-with-an-open-hand-ready-to-seal-a-deal.jpg"
-                layout="fill"
-              ></Image>
             </div>
-          </div>
-          <div className="col-lg-6 p-0">
-            <div className="login-container ">
-              <div className="form-title-container px-5 p-4 dark-bg">
-                <h2 className="lexyellow mb-3">Register</h2>
-                <span className="underline d-block bg-gold rounded-pill w-100 px-4"></span>
-              </div>
-              <div className="login-form gray-bg p-5">
-                <form action="gray-bg" method="" className="row g-3 p-4">
-                  <div className="col-6">
-                    <label>First Name</label>
-                    <input
-                      type="text"
-                      name="username"
-                      className="form-control"
-                      placeholder="Username"
-                    />
-                  </div>
-                  <div className="col-6">
-                    <label>Last Name</label>
-                    <input
-                      type="text"
-                      name="username"
-                      className="form-control"
-                      placeholder="Username"
-                    />
-                  </div>
-                  <div className="col-12">
-                    <label>Email</label>
-                    <input
-                      type="text"
-                      name="username"
-                      className="form-control"
-                      placeholder="Username"
-                    />
-                  </div>
-                  <div className="col-12">
-                    <label>Password</label>
-                    <input
-                      type="text"
-                      name="username"
-                      className="form-control"
-                      placeholder="Password"
-                    />
-                  </div>
-                  <div className="col-12">
-                    <label>Confirm Password</label>
-                    <input
-                      type="password"
-                      name="password"
-                      className="form-control"
-                      placeholder=" Confirm Password"
-                    />
-                  </div>
-                  <div className="col-12">
-                    <div className="d-flex justify-content-between">
-                      <div className="form-check">
-                        <input
-                          className="form-check-input"
-                          type="checkbox"
-                          id="rememberMe"
-                        />
-                        <label
-                          className="form-check-label"
-                          htmlFor="rememberMe"
-                        >
-                          {" "}
-                          Remember me
-                        </label>
+            <div className="col-lg-6 p-0">
+              <div className="login-container ">
+                <div className="form-title-container px-5 p-4 dark-bg">
+                  <h2 className="lexyellow mb-3">Register</h2>
+                  <span className="underline d-block bg-gold rounded-pill w-100 px-4"></span>
+                </div>
+                <div className="login-form gray-bg p-5">
+                  <form action="gray-bg" method="" className="row g-3 p-4">
+                    <div className="col-6">
+                      <label>First Name</label>
+                      <input
+                        type="text"
+                        name="username"
+                        className="form-control"
+                        placeholder="Username"
+                      />
+                    </div>
+                    <div className="col-6">
+                      <label>Last Name</label>
+                      <input
+                        type="text"
+                        name="username"
+                        className="form-control"
+                        placeholder="Username"
+                      />
+                    </div>
+                    <div className="col-12">
+                      <label>Email</label>
+                      <input
+                        type="text"
+                        name="username"
+                        className="form-control"
+                        placeholder="Username"
+                      />
+                    </div>
+                    <div className="col-12">
+                      <label>Password</label>
+                      <input
+                        type="text"
+                        name="username"
+                        className="form-control"
+                        placeholder="Password"
+                      />
+                    </div>
+                    <div className="col-12">
+                      <label>Confirm Password</label>
+                      <input
+                        type="password"
+                        name="password"
+                        className="form-control"
+                        placeholder=" Confirm Password"
+                      />
+                    </div>
+                    <div className="col-12">
+                      <div className="d-flex justify-content-between">
+                        <div className="form-check">
+                          <input
+                            className="form-check-input"
+                            type="checkbox"
+                            id="rememberMe"
+                          />
+                          <label
+                            className="form-check-label"
+                            htmlFor="rememberMe"
+                          >
+                            {" "}
+                            Remember me
+                          </label>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="col-12">
                     <div className="col-12">
-                      <div className="mb-3">
-                        <button
-                          className="btn dark-bg text-white w-100"
-                          type="button"
-                        >
-                          Sign-up
-                        </button>
-                      </div>
-                      <div className="d-flex gap-3">
-                        <button
-                          className="btn dark-bg text-white w-50"
-                          type="button"
-                        >
-                          Sign-up with Google
-                        </button>
-                        <button
-                          className="btn dark-bg text-white w-50"
-                          type="button"
-                        >
-                          Sign-up with Facebook
-                        </button>
+                      <div className="col-12">
+                        <div className="mb-3">
+                          <button
+                            className="btn dark-bg text-white w-100"
+                            type="button"
+                          >
+                            Sign-up
+                          </button>
+                        </div>
+                        <div className="d-flex gap-3">
+                          <button
+                            className="btn dark-bg text-white w-50"
+                            type="button"
+                          >
+                            Sign-up with Google
+                          </button>
+                          <button
+                            className="btn dark-bg text-white w-50"
+                            type="button"
+                          >
+                            Sign-up with Facebook
+                          </button>
+                        </div>
+                        {/* <button type="submit" className="btn btn-dark float-end">Login</button> */}
                       </div>
                       
                     </div>
+                  </form>
+                  <hr className="mt-4" />
+                  <div className="col-12">
+                    <p className="text-center mb-5">
+                      Already have an account? &nbsp;
+                      <Link href="/login">
+                        <a href="#">Login</a>
+                      </Link>
+                    </p>
                   </div>
-                </form>
-                <hr className="mt-4" />
-                <div className="col-12">
-                  <p className="text-center mb-5">
-                    Already have an account? &nbsp;
-                    <Link href="/login">
-                      <a href="#">Login</a>
-                    </Link>
-                  </p>
                 </div>
               </div>
             </div>
