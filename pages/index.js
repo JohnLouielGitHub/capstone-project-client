@@ -12,18 +12,8 @@ export default function Home() {
       </Head>
 
       <main>
-<<<<<<< HEAD
       
-        <h1 className="text-center bg-primary ">Main Body of Home</h1>
-      </main>
-=======
-        <hero className="d-block position-relative vh-100 h-100 mh-100 w-100 mt-5">
-          {/* <Image
-          style={{ zIndex: 1 }}
-          src="https://previews.123rf.com/images/ijeab/ijeab1805/ijeab180500064/102335348-law-advice-and-legal-services-concept-lawyer-and-attorney-having-team-meeting-at-law-firm-.jpg"
-          layout="fill"
-        ></Image> */}
->>>>>>> ace906716c7ed85be1f62c40a4a314daa87e0692
+      
 
           <div className="container-fluid position-absolute top-50 start-50 translate-middle w-100 overlay-dark p-5">
             <div className="container">
@@ -36,7 +26,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-        </hero>
+       
       </main>
     </div>
   );

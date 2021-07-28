@@ -1,8 +1,12 @@
+import { useRouter } from "next/router";
 import Image from 'next/image'
 import Link from 'next/link'
+import ActiveLink from './ActiveLink';
 
 
 const Navbar = () => {
+    const router = useRouter();
+    
     return ( 
         <nav className="gray-bg">
            <div className="container h-100">
@@ -16,14 +20,26 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="col-lg-6">
-                <div className="nav-menu d-flex h-100 justify-content-lg-between align-items-lg-center ">
-                    <Link href="/"><a className="text-decoration-none text-white">Home</a></Link>
-                    <Link href="/about"><a className="text-decoration-none text-white">About Us</a></Link>
-                    <Link href="/"><a className="text-decoration-none text-white">Law Updates</a></Link>
-                    <Link href="/"><a className="text-decoration-none text-white">Our lawyers</a></Link>
-                    <Link href="/"><a className="text-decoration-none text-white">Everyday Law</a></Link>
-                    <Link href="/"><a className="text-decoration-none text-white">Contact Us</a></Link> 
-                </div>
+                    <ul className="nav-menu d-flex h-100 justify-content-lg-between align-items-lg-center ">
+                        <li className="list-unstyled">
+                            <ActiveLink  href="/" className="text-decoration-none text-white">Home</ActiveLink>
+                        </li>
+                        <li className="list-unstyled">
+                            <ActiveLink href="/about" className="text-decoration-none text-white">About Us</ActiveLink>
+                        </li>
+                        <li className="list-unstyled">
+                            <ActiveLink href="/Law Updates" className="text-decoration-none text-white">Law Updates</ActiveLink>
+                        </li>
+                        <li className="list-unstyled">
+                            <ActiveLink href="/Our lawyers" className="text-decoration-none text-white">Our lawyers</ActiveLink>
+                        </li>
+                        <li className="list-unstyled">
+                            <ActiveLink href="/Everyday Law" className="text-decoration-none text-white">Everyday Law</ActiveLink>
+                        </li>
+                        <li className="list-unstyled">
+                            <ActiveLink href="/Contact Us" className="text-decoration-none text-white">Contact Us</ActiveLink>
+                        </li> 
+                    </ul>
                 </div>
                 <div className="col-lg-2">
                     <div className="d-flex h-100 justify-content-end align-items-lg-center">
@@ -35,6 +51,7 @@ const Navbar = () => {
             </div>
              </div>     
         </nav>
+        
      );
 }
  
