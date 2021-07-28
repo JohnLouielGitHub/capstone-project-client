@@ -1,37 +1,23 @@
-$primary: #25408f;
-$secondary: #3928f5;
-$success: #3e8d63;
-$info: #13101c;
-$warning: #945707;
-$danger: #d62518;
-$light: #f8f9fa;
-$dark: #2b2d66;
-$darker: #6357f6;
-$faded-blue: #64d7d7;
-$gold: #ffd900;
-$pink: #f55771;
-$active: #181942;
-$main-background: #181942;
-$CARD-lINEAR: linear-gradient(#4d4f95, #2b2d66);
-$gray: #757676;
-$dark-bg:#252827;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap');
+
+$f2: 'Lato', sans-serif;
+$f1: 'Roboto Slab', serif;
+
+$main-highlight-color: #F8CF2C;
+$main-dark: #252827;
+$main-dark-light: #4D4F4E;
+$main-dark-lighter: #757676;
+$text-white: #F8FFFE;
+
 
 $theme-colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "success": $success,
-  "info": $info,
-  "warning": $warning,
-  "danger": $danger,
-  "light": $light,
-  "dark": $dark,
-  "darker": $darker,
-  "fb": $faded-blue,
-  "pink": $pink,
-  "gold": $gold,
-  "active": $active,
-  "main": $main-background,
-  "gray": $gray,
+  "light": $text-white,
+  "gold": $main-highlight-color,
+  "dark": $main-dark,
+  "light-dark": $main-dark-light,
+  "gray": $main-dark-lighter,
+  
 ) !default;
 
 @import "~bootstrap/scss/functions";
@@ -121,4 +107,9 @@ $theme-colors: (
 @import "/scss/footer.scss";
 @import "/scss/login.scss";
 @import "/scss/utilities.scss";
+@import "/scss/home.scss";
 
+
+body{
+  font-family: $f2;
+}
