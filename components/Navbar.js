@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Navbar = () => {
     return ( 
-        <nav >
+        <nav className="position-fixed top-0 w-100 border-bottom border-dark" style={{zIndex: 10}}>
            <div className="container h-100">
            <div className="row h-100">
                 <div className="col-lg-4">

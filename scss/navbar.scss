@@ -2,17 +2,17 @@ a{
     cursor:pointer;
 }
 nav{ 
-    background: $gray;
+    background: $main-dark-lighter;
     height:80px;
 }
 
 nav h1{
-    color:$gold;
+    color:$main-highlight-color;
     font-size: 18px;
 }
 nav button{
-    background: $gold!important;
+    background: $main-highlight-color!important;
 }
 .nav-menu a:hover{
-    color: $gold!important;
+    color: $main-highlight-color!important;
 }

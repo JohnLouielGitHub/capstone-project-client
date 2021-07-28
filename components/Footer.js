@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Footer = () => {
     return ( 
-        <footer className="gray-bg mt-5 py-3">
+        <footer className="gray-bg py-3">
             <div className="container ">
             <div className="row">
                 <div className="col  col-lg-2 ">
