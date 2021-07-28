@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
 
       <main>
-        
+      
         <h1 className="text-center bg-primary ">Main Body of Home</h1>
       </main>
 
