@@ -1,3 +1,10 @@
+.font-main{
+    font-family: $f1;
+}
+
+.mb-24{
+    margin-bottom: 1rem;
+}
 
 p{
     line-height: 30px;
@@ -17,6 +24,11 @@ p{
 
 .overlay-dark{
     background: linear-gradient(0deg, rgba(40, 37, 37, 0.5), rgba(40, 37, 37, 0.5));
+    z-index:2;
+}
+
+.overlay-dark-1{
+    background: linear-gradient(0deg, rgba(40, 37, 37, 0.6), rgba(40, 37, 37, 0.6));
     z-index:2;
 }
 
