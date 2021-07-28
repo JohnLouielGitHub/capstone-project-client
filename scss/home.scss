@@ -24,3 +24,31 @@
     background: $main-dark;
     border: $main-highlight-color 1px solid;
 }
+
+.home__law-practices{
+    padding: 25px 28px;
+
+    span{
+        font-size: 1.2rem;
+    }
+}
+
+
+    #home__concentration-law-practice{
+        padding-left: 0;
+        .col-6:nth-child(even){
+            padding-right: 0;
+        }
+        .col-6:nth-child(odd){
+            padding-left: 0;
+        }
+    }
+
+
+
+
+
+
+.bg-line{
+    border-bottom:  $main-highlight-color 1px solid ;
+}

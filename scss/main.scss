@@ -29,6 +29,14 @@ $display-font-sizes: (
   6: 2.5rem
 );
 
+$position-values: (
+  0: 0,
+  15: 15%,
+  25: 25%,
+  50: 50%,
+  100: 100%
+);
+
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
