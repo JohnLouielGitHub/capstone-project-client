@@ -3,8 +3,14 @@ import Image from "next/dist/client/image";
 
 const Login = () => {
   return (
-    <div className="my-5">
-      <div className="container mt-lg-4">
+    <>
+      <div className="position-relative vh-100 h-100 mh-100 w-100">
+        <Image
+          src="https://previews.123rf.com/images/ijeab/ijeab1805/ijeab180500064/102335348-law-advice-and-legal-services-concept-lawyer-and-attorney-having-team-meeting-at-law-firm-.jpg"
+          layout="fill"
+        ></Image>
+      
+      <div className="container position-absolute top-50 start-50 translate-middle">
         <div className="row">
           <div className="col-lg-6 p-0">
             <div className="gray-bg d-flex align-items-center justify-content-center h-100 position-relative ">
@@ -115,7 +121,8 @@ const Login = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -3,19 +3,35 @@ import Image from "next/dist/client/image";
 
 const Signup = () => {
   return (
-    <div className="my-5">
-      <div className="container mt-lg-4">
-        <div className="row">
-          <div className="col-lg-6 p-0">
-            <div className="gray-bg d-flex align-items-center justify-content-center h-100 position-relative ">
-              <div className="p-3 " style={{ zIndex: 3 }}>
-                <h2 className="lexyellow login-text-title">
-                  We're here for you
-                </h2>
-                <p className="text-white login-text">
-                  Online legal service that provides legal information and
-                  advice.
-                </p>
+    <>
+      <div className="position-relative vh-100 h-100 mh-100 w-100">
+        <Image
+          src="https://previews.123rf.com/images/ijeab/ijeab1805/ijeab180500064/102335348-law-advice-and-legal-services-concept-lawyer-and-attorney-having-team-meeting-at-law-firm-.jpg"
+          layout="fill"
+        ></Image>
+        <div className="container position-absolute top-50 start-50 translate-middle">
+          <div className="row">
+            <div className="col-lg-6 p-0">
+              <div className="gray-bg d-flex align-items-center justify-content-center h-100 position-relative ">
+                <div className="p-3 " style={{ zIndex: 3 }}>
+                  <h2 className="lexyellow login-text-title">
+                    We're here for you
+                  </h2>
+                  <p className="text-white login-text">
+                    Online legal service that provides legal information and
+                    advice.
+                  </p>
+                </div>
+                <div
+                  className="overlay-dark"
+                  style={{ zIndex: 2 }}
+                  layout="fill"
+                ></div>
+                <Image
+                  style={{ zIndex: 1 }}
+                  src="https://previews.123rf.com/images/opolja/opolja1311/opolja131100148/23580117-a-business-man-with-an-open-hand-ready-to-seal-a-deal.jpg"
+                  layout="fill"
+                ></Image>
               </div>
             </div>
             <div className="col-lg-6 p-0">
@@ -115,7 +131,6 @@ const Signup = () => {
                         </div>
                         {/* <button type="submit" className="btn btn-dark float-end">Login</button> */}
                       </div>
-                      
                     </div>
                   </form>
                   <hr className="mt-4" />
@@ -133,7 +148,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
