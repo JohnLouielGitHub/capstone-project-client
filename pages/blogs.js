@@ -105,12 +105,15 @@ export default function Blogs() {
                   have without any hidden agenda.
                 </p>
                 <div className="d-flex flex-wrap justify-content-between">
-                  <button
+                <Link href="/blog">
+                    <button
                     className="col-md-6 col-12 mb-3 mb-md-0 btn"
                     type="button"
                   >
                     Read More
                   </button>
+                    </Link>
+
                   <div className="col-md-6 col-12 mb-3 mb-md-0 ps-3 fw-bold text-dark font-main d-flex justify-content-around align-items-center">
                     Share:
                     <Link
@@ -221,12 +224,14 @@ export default function Blogs() {
                   have without any hidden agenda.
                 </p>
                 <div className="d-flex flex-wrap justify-content-between">
+                <Link href="/blog">
                   <button
                     className="col-md-6 col-12 mb-3 mb-md-0 btn"
                     type="button"
                   >
                     Read More
                   </button>
+                  </Link>
                   <div className="col-md-6 col-12 mb-3 mb-md-0 ps-3 fw-bold text-dark font-main d-flex justify-content-around align-items-center">
                     Share:
                     <Link
@@ -335,12 +340,14 @@ export default function Blogs() {
                   have without any hidden agenda.
                 </p>
                 <div className="d-flex flex-wrap justify-content-between">
+                <Link href="/blog">
                   <button
                     className="col-md-6 col-12 mb-3 mb-md-0 btn"
                     type="button"
                   >
                     Read More
                   </button>
+                  </Link>
                   <div className="col-md-6 col-12 mb-3 mb-md-0 ps-3 fw-bold text-dark font-main d-flex justify-content-around align-items-center">
                     Share:
                     <Link

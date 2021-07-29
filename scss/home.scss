@@ -208,6 +208,7 @@
 
 .social-icon:hover{
     svg{
+        cursor: pointer;
         fill: $main-highlight-color;
     }
 
