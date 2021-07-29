@@ -26,7 +26,9 @@ $display-font-sizes: (
   3: 4rem,
   4: 3.5rem,
   5: 3rem,
-  6: 2.5rem
+  6: 2.5rem,
+  7: 1.5rem,
+  8: 1.25rem,
 );
 
 $position-values: (
@@ -37,10 +39,43 @@ $position-values: (
   100: 100%
 );
 
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+);
+
+
+
+
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/utilities";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "width": (
+      property: width,
+      class: w,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        90: 90%,
+        95: 95%,
+        100: 100%,
+        auto: auto
+      )
+    )
+  )
+);
 
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
@@ -129,4 +164,12 @@ $position-values: (
 
 body{
   font-family: $f2;
+  background-color: $main-dark-lighter;
 }
+
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
