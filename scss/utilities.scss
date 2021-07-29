@@ -1,32 +1,33 @@
-
-p{
+p {
     line-height: 30px;
 }
-.lexyellow{
-    color:$main-highlight-color;
+.lexyellow {
+    color: $main-highlight-color;
 }
-.bg-gold{
+.bg-gold {
     background: $main-highlight-color;
 }
-.dark-bg{
+.dark-bg {
     background: $main-dark;
 }
-.gray-bg{
-    background:$main-dark-lighter;
+.gray-bg {
+    background: $main-dark-lighter;
+}
+.dark-gray-bg {
+    background: $main-dark-light;
 }
 
-.overlay-dark{
+.overlay-dark {
     background: linear-gradient(0deg, rgba(40, 37, 37, 0.5), rgba(40, 37, 37, 0.5));
-    z-index:2;
+    z-index: 2;
 }
 
 //ABOUT PAGE
-.about-overlay{  
-    top:0;
-    z-index:1;
+.about-overlay {
+    top: 0;
+    z-index: 1;
 }
 
-.about-logo{
-    z-index:0;
+.about-logo {
+    z-index: 0;
 }
-

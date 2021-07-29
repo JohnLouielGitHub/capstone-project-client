@@ -1,0 +1,13 @@
+#profile-bg {
+    background-image: url("../public/profile-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#profile-tabs {
+    .btn-tab {
+        background: #252827;
+        border: 1px solid #f8cf2c;
+        border-bottom: none;
+        border-radius: 0px 16px 0px 0px;
+    }
+}
