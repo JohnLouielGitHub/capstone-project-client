@@ -44,7 +44,7 @@ export default function Blog() {
           <div className="container mt-6">
             <div className="row home__blog mb-6">
               <div className="col-12 ">
-              <p className="col fw-bold text-white mt-3 flex-wrap">
+                <p className="col fw-bold text-white mt-3 flex-wrap">
                   At LawServe, we believe that every person deserves access to
                   justice. That's why we offer safe, affordable advice about any
                   issue you may have without any hidden agenda. At LawServe, we
@@ -89,12 +89,12 @@ export default function Blog() {
                   have without any hidden agenda.
                 </p>
                 <span>
-                <Image
-                  className="col"
-                  src="https://previews.123rf.com/images/adiruch/adiruch1804/adiruch180400460/99704263-businessman-shaking-hands-judge-gavel-with-justice-lawyers-trust-promise-win-the-case.jpg"
-                  width={360}
-                  height={360}
-                />
+                  <Image
+                    className="col"
+                    src="https://previews.123rf.com/images/adiruch/adiruch1804/adiruch180400460/99704263-businessman-shaking-hands-judge-gavel-with-justice-lawyers-trust-promise-win-the-case.jpg"
+                    width={360}
+                    height={360}
+                  />
                 </span>
 
                 <p className="col fw-bold text-white mt-3">
@@ -146,12 +146,21 @@ export default function Blog() {
                 <div className="d-flex flex-wrap justify-content-between">
                   <Link href="/blogs">
                     <button
-                      className="col-md-4 col-sm-6 col-12 mb-3 mb-md-0 btn"
+                      className="col-md-4 col-12 mb-3 mb-md-0 btn"
                       type="button"
                     >
                       More Blogs
                     </button>
                   </Link>
+                  <div className="col-md-4 col-sm-6 col-12 mb-3 mb-md-0 ps-3 fw-bold text-dark font-main d-flex justify-content-start align-items-center">
+                    <span className="fw-bold font-main me-3">Tags:</span>
+                    <span className="bg-white font-main me-2 rounded p-1">
+                      Blogs
+                    </span>
+                    <span className="bg-white font-main me-2 rounded p-1">
+                      Legal Case
+                    </span>
+                  </div>
 
                   <div className="col-md-4 col-sm-6 col-12 mb-3 mb-md-0 ps-3 fw-bold text-dark font-main d-flex justify-content-evenly align-items-center">
                     Share:
