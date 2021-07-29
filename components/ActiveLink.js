@@ -18,7 +18,7 @@ const ActiveLink = ({ router, href, children }) => {
     const isCurrentPath = router.pathname === href || router.asPath === href;
     return ( 
 
-        <a href={href} onclick={handleClick}
+        <a href={href} onClick={handleClick}
         style={{
             textDecoration:"none",
             // fontWeight:isCurrentPath ? "bold" : "normal",
