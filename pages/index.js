@@ -31,16 +31,7 @@ export default function Home() {
       </Head>
 
       <main>
-      <div className="App">
-        {(user.email != "") ? (
-          <div className="welcome">
-            <h2>Welcome, <span>{user.name}</span></h2>
-            <button>Logout</button>
-          </div>
-        ):(
-          <login />
-        )}
-      </div>
+      
       
       
 

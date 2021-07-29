@@ -31,7 +31,7 @@ const Footer = () => {
                 <div className="col  col-12  col-md-6 col-lg-8">
                     <div className="h-100 d-flex justify-content-center align-items-center">
                     <Image  src="/Logo.svg" alt="Logo" width={200}
-      height={200}  />
+                    height={200}  />
                     </div>
                 </div>
                 <div className="col col-12 col-md-3 col-lg-2 text-center text-lg-start">
