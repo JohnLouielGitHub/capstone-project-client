@@ -12,3 +12,16 @@ nav h1{
 .nav-menu a:hover{
     color: $main-highlight-color!important;
 }
+.Navbar .MobileNavigation{
+    display:none;
+}
+
+@media(min-width: 990px){
+    .Navigation{
+        display: none;
+        background: aqua;
+    }
+    .Navbar .MobileNavigation{
+        display:block;
+    }
+}

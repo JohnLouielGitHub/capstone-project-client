@@ -39,6 +39,7 @@ const Login = () => {
             <div className="login-container ">
               <div className="form-title-container px-5 p-4 dark-bg">
                 <h2 className="lexyellow mb-3">Login</h2>
+                {/* {ERROR!} */}
                 <span className="underline d-block bg-gold rounded-pill w-100"></span>
               </div>
               <div className="login-form gray-bg p-5">

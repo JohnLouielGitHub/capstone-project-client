@@ -4,6 +4,8 @@ import Link from 'next/link'
 import ActiveLink from './ActiveLink';
 
 
+
+
 const Navbar = () => {
     const router = useRouter();
     
@@ -20,7 +22,8 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="col-lg-6">
-                    <ul className="nav-menu d-flex h-100 justify-content-lg-between align-items-lg-center ">
+                   
+                <ul className="nav-menu d-flex h-100 justify-content-lg-between align-items-lg-center ">
                         <li className="list-unstyled">
                             <ActiveLink  href="/" className="text-decoration-none text-white">Home</ActiveLink>
                         </li>
@@ -39,7 +42,8 @@ const Navbar = () => {
                         <li className="list-unstyled">
                             <ActiveLink href="/Contact Us" className="text-decoration-none text-white">Contact Us</ActiveLink>
                         </li> 
-                    </ul>
+                </ul>
+                   
                 </div>
                 <div className="col-lg-2">
                     <div className="d-flex h-100 justify-content-end align-items-lg-center">
@@ -51,6 +55,10 @@ const Navbar = () => {
             </div>
              </div>     
         </nav>
+
+
+
+   
         
      );
 }
