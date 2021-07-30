@@ -9,7 +9,7 @@ const About = () => {
                 
                 <div className="position-relative text-center  mt-5 pt-5 "  >
                 <div className="overlay-dark about-overlay position-absolute h-100 w-100">&nbsp;</div>
-                <Image className="about-logo" src="/Logo.svg"  width={445} height={278}/>
+                <Image className="about-logo" src="/Logo.svg"  width={445} height={278} alt="logo"/>
                 </div>  
             </div>
         </section>
@@ -27,13 +27,13 @@ const About = () => {
             <div className="container">
                 <div className="text-white text-center bg-gray px-5 py-3">
                     <div>
-                        <p className="mb-4" >Men of Law Corporate,  believes that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda. </p>
-                        <p>Men of Law Corporate,  believes that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda. </p>
+                        <p className="mb-4" >Men of Law Corporate,  believes that every person deserves access to justice. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda. </p>
+                        <p>Men of Law Corporate,  believes that every person deserves access to justice. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda. </p>
                     </div>
                     <div className="pb-3">
                         <h3 className="lexyellow my-5">Our Mission</h3>
-                        <p className="mb-4">Men of Law Corporate,  believes that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda. </p>
-                        <p>Men of Law Corporate,  believes that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda. </p>
+                        <p className="mb-4">Men of Law Corporate,  believes that every person deserves access to justice. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda. </p>
+                        <p>Men of Law Corporate,  believes that every person deserves access to justice. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda. </p>
                     </div>
                 </div>
             </div>

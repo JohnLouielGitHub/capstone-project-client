@@ -82,7 +82,7 @@ const Navbar = () => {
         <ul className="nav-menu bg-dark h-100 justify-content-lg-between align-items-center px-4 py-3">
               <li className="list-unstyled mb-3">
                 <ActiveLink
-                  href="/"
+                  passHref href="/"
                   className="text-decoration-none text-white"
                 >
                   Home
@@ -90,7 +90,7 @@ const Navbar = () => {
               </li>
               <li className="list-unstyled mb-3">
                 <ActiveLink
-                  href="/about"
+                  passHref href="/about"
                   className="text-decoration-none text-white"
                 >
                   About Us
@@ -98,7 +98,7 @@ const Navbar = () => {
               </li>
               <li className="list-unstyled mb-3">
                 <ActiveLink
-                  href="/Law Updates"
+                  passHref href="/Law Updates"
                   className="text-decoration-none text-white"
                 >
                   Law Updates
@@ -106,7 +106,7 @@ const Navbar = () => {
               </li>
               <li className="list-unstyled mb-3">
                 <ActiveLink
-                  href="/Our lawyers"
+                  passHref href="/Our lawyers"
                   className="text-decoration-none text-white"
                 >
                   Our lawyers
@@ -114,7 +114,7 @@ const Navbar = () => {
               </li>
               <li className="list-unstyled mb-3">
                 <ActiveLink
-                  href="/blogs"
+                  passHref href="/blogs"
                   className="text-decoration-none text-white"
                 >
                   Everyday Law
@@ -122,7 +122,7 @@ const Navbar = () => {
               </li>
               <li className="list-unstyled mb-3">
                 <ActiveLink
-                  href="/Contact Us"
+                  passHref href="/Contact Us"
                   className="text-decoration-none text-white"
                 >
                   Contact Us
@@ -155,7 +155,7 @@ const Navbar = () => {
           <div className="col-6 col-md-3 col-lg-4">
             <div className="logo d-flex h-100 justify-content-center justify-content-md-start align-items-center">
               <div className="me-0 me-md-2 mb-0">
-                <Image src="/Logo.png" width={60} height={60} />
+                <Image src="/Logo.png" width={60} height={60} alt="Logo" />
               </div>
               <h1 className="mb-0 ms-1 lexyellow"> Men of Law Corporate</h1>
             </div>
@@ -172,7 +172,7 @@ const Navbar = () => {
             <ul className="nav-menu d-md-flex h-100 justify-content-lg-between align-items-center p-0">
               <li className="text-center list-unstyled">
                 <ActiveLink
-                  href="/"
+                  passHref href="/"
                   className="text-decoration-none text-white"
                 >
                   Home
@@ -180,7 +180,7 @@ const Navbar = () => {
               </li>
               <li className="text-center list-unstyled">
                 <ActiveLink
-                  href="/about"
+                  passHref href="/about"
                   className="text-decoration-none text-white"
                 >
                   About Us
@@ -188,7 +188,7 @@ const Navbar = () => {
               </li>
               <li className="text-center list-unstyled">
                 <ActiveLink
-                  href="/Law Updates"
+                  passHref href="/Law Updates"
                   className="text-decoration-none text-white"
                 >
                   Law Updates
@@ -196,7 +196,7 @@ const Navbar = () => {
               </li>
               <li className="text-center list-unstyled">
                 <ActiveLink
-                  href="/Our lawyers"
+                  passHref href="/Our lawyers"
                   className="text-decoration-none text-white"
                 >
                   Our lawyers
@@ -204,7 +204,7 @@ const Navbar = () => {
               </li>
               <li className="text-center list-unstyled">
                 <ActiveLink
-                  href="/blogs"
+                  passHref href="/blogs"
                   className="text-decoration-none text-white"
                 >
                   Everyday Law
@@ -212,7 +212,7 @@ const Navbar = () => {
               </li>
               <li className="text-center list-unstyled">
                 <ActiveLink
-                  href="/Contact Us"
+                  passHref href="/Contact Us"
                   className="text-decoration-none text-white"
                 >
                   Contact Us
@@ -222,7 +222,7 @@ const Navbar = () => {
           </div>
           <div className="col-md-2 d-none d-md-block">
             <div className="d-flex h-100 w-100 justify-content-center align-items-center">
-              <Link href="/login">
+              <Link passHref href="/login">
                 <button className="login-btn rounded-pill border-0 px-5 py-1 font-main fw-bold">
                   Login
                 </button>
