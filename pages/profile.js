@@ -1,8 +1,8 @@
 import Link from "next/dist/client/link";
 import Image from "next/dist/client/image";
-import profilePic from '../public/profile-img.png'
-import ProfileAccordion from '../components/ProfileAccordion'
-import React, { useState } from 'react';
+import profilePic from "../public/profile-img.png";
+import ProfileAccordion from "../components/ProfileAccordion";
+import React, { useState } from "react";
 const profile = () => {
     const [accords, setAccords] = useState([
         {
@@ -91,8 +91,8 @@ const profile = () => {
                         <div className="col-12 col-md-8">
                             <div className="text-white py-3">
                                 <div>
-                                    <p className="mb-4" >Men of Law Corporate,  believes that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda. </p>
-                                    <p>Men of Law Corporate,  believes that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda. </p>
+                                    <p className="mb-4" >Men of Law Corporate,  believes that every person deserves access to justice. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda. </p>
+                                    <p>Men of Law Corporate,  believes that every person deserves access to justice. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That&apos;s why we offer safe, affordable advice about any issue you may have without any hidden agenda. </p>
                                 </div>
 
                             </div>
@@ -129,6 +129,7 @@ const profile = () => {
                     </>
                 ))}
             </section>
+            <div className="footer-divider w-100 bg-dark mb-6"></div>
         </div>
     )
 }

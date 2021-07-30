@@ -31,7 +31,9 @@ const ProfileAccordion = ({ accord, index }) => {
                                     </div>
                                 </div>
                             </>
-                        )) : "Hello"}
+                        )) 
+                        : ""
+                        }
                     </div>
                 </div>
             </div>

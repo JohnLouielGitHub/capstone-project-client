@@ -108,7 +108,7 @@ const Navbar = () => {
               </li>
               <li className="list-unstyled mb-3">
                 <ActiveLink
-                  passHref href="/Our lawyers"
+                  passHref href="/profile"
                   className="text-decoration-none text-white"
                 >
                   Our lawyers
@@ -198,7 +198,7 @@ const Navbar = () => {
               </li>
               <li className="text-center list-unstyled">
                 <ActiveLink
-                  passHref href="/Our lawyers"
+                  passHref href="/profile"
                   className="text-decoration-none text-white"
                 >
                   Our lawyers
