@@ -1,9 +1,9 @@
-import Link from "next/dist/client/link";
 import Image from "next/dist/client/image";
 import profilePic from "../public/profile-img.png";
 import ProfileAccordion from "../components/ProfileAccordion";
-import React, { useState } from "react";
-const profile = () => {
+import React, { useState } from 'react';
+
+const Profile = () => {
     const [accords, setAccords] = useState([
         {
             title: "Lawyers Information",
@@ -66,7 +66,8 @@ const profile = () => {
             detail: "",
             open: false
         }
-    ])
+    ]);
+
     return (
         <div>
             <section id="profile-bg" className="h-100">
@@ -131,7 +132,7 @@ const profile = () => {
             </section>
             <div className="footer-divider w-100 bg-dark mb-6"></div>
         </div>
-    )
-}
+    );
+};
 
-export default profile
+export default Profile;

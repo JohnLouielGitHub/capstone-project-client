@@ -25,7 +25,7 @@ const ProfileAccordion = ({ accord, index }) => {
                                     </div>
                                     <div className="dark-bg py-2 px-3 d-flex flex-column justify-content-center">
                                         {(Array.isArray(info.answer)) ?
-                                            info.answer.map((ans) => <p>{ans}</p>)
+                                            info.answer.map((ans) => <p key="">{ans}</p>)
                                             :
                                             <p>{info.answer}</p>}
                                     </div>
