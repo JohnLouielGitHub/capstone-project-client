@@ -6,9 +6,7 @@
     height: 4px;
     
 }
-.login-container{
-    border-left: 3px solid $main-highlight-color;
-}
+
 .login-main-container{
     max-width: 1290px;
 }
@@ -17,4 +15,14 @@
 }
 .login-text-title{
     font-size: 48px;
+}
+a.forgot-pw:hover{
+    color:#fafafa86!important;
+    
+}
+
+@media screen and (min-width: 990px){
+    .login-container{
+        border-left: 3px solid $main-highlight-color;  
+    }
 }

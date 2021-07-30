@@ -1,6 +1,11 @@
 footer a{
     line-height: 30px;
 }
+
+.footer-divider{
+    height: 180px;
+}
+
 footer a:hover{
     color: $main-highlight-color!important;
 }

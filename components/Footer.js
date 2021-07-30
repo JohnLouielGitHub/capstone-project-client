@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 import ActiveLink from './ActiveLink';
 
 const Footer = () => {
@@ -48,8 +48,8 @@ const Footer = () => {
             <div className="container">
             <p className="mt-1 text-white">All rights reserved. Copyright 2021Ⓒ Lexweb Inc.</p>
             </div>
-        </footer>
-     );
-}
- 
+          </footer>
+  );
+};
+
 export default Footer;

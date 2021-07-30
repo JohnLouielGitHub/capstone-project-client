@@ -1,7 +1,17 @@
 import Link from "next/dist/client/link";
 import Image from "next/dist/client/image";
+import React, {useState} from "react";
 
 const Login = () => {
+
+  // const [details,setDetails] = useState({name: "", email: "", password: ""})
+
+  // const submitHandler = e =>{
+  //   e,preventDefault();
+
+  //   login(details);
+  // }
+
   return (
     <>
       <div className="position-relative vh-100 h-100 mh-100 w-100">
@@ -10,11 +20,11 @@ const Login = () => {
           layout="fill"
         ></Image>
       
-      <div className="container position-absolute top-50 start-50 translate-middle">
+      <div className="container position-absolute top-50 start-50 translate-middle mt-2">
         <div className="row">
-          <div className="col-lg-6 p-0">
-            <div className="gray-bg d-flex align-items-center justify-content-center h-100 position-relative ">
-              <div className="p-3 " style={{ zIndex: 3 }}>
+          <div className="col-lg-6 p-0 d-none d-lg-block">
+            <div className="gray-bg d-flex  align-items-center justify-content-center h-100 position-relative ">
+              <div className="p-xl-3 " style={{ zIndex: 3 }}>
                 <h2 className="lexyellow login-text-title">
                   We're here for you
                 </h2>
@@ -35,15 +45,15 @@ const Login = () => {
               ></Image>
             </div>
           </div>
-          <div className="col-lg-6 p-0">
+          <div className="col-lg-6 p-0 bg-dark">
             <div className="login-container ">
-              <div className="form-title-container px-5 p-4 dark-bg">
+              <div className="form-title-container px-5 py-2 py-xxl-3 dark-bg">
                 <h2 className="lexyellow mb-3">Login</h2>
                 {/* {ERROR!} */}
                 <span className="underline d-block bg-gold rounded-pill w-100"></span>
               </div>
-              <div className="login-form gray-bg p-5">
-                <form action="gray-bg" method="" className="row g-3 p-4">
+              <div className="login-form gray-bg p-4 px-md-5 p-xxl-5">
+                <form onSubmit={submitHandler}  className="row g-3 p-xl-4 gray-bg">
                   <div className="col-12">
                     <label>Username</label>
                     <input
@@ -79,38 +89,43 @@ const Login = () => {
                         </label>
                       </div>
                       <div>
-                        <a>Forgot password?</a>
+                        <a className="forgot-pw text-decoration-none text-dark">Forgot password?</a>
                       </div>
                     </div>
                   </div>
                   <div className="col-12">
                     <div className="mb-3">
-                      <button
+                      <input
                         className="btn dark-bg text-white w-100"
-                        type="button"
+                        type="submit"
+                        value="Login"
                       >
-                        Login
-                      </button>
+                        
+                      </input>
                     </div>
                     <div className="d-flex gap-3">
                       <button
-                        className="btn dark-bg text-white w-50"
+                        className="btn dark-bg text-white w-50 d-flex justify-content-center align-items-center gap-3"
                         type="button"
                       >
-                        Login with Google
+                        Login 
+
+                        <Image src="/gmailLogin.svg" alt="Instagram-icon" width={32} height={32}/>
                       </button>
                       <button
-                        className="btn dark-bg text-white w-50"
-                        type="button"
+                        className="btn dark-bg text-white w-50 d-flex justify-content-center align-items-center gap-3"
+                        type="submit"
                       >
-                        Login with Facebook
+                        Login  
+
+                        <Image src="/fbLogin.svg" alt="Instagram-icon" width={32} height={32}/>
                       </button>
                     </div>
                   </div>
                 </form>
                 <hr className="mt-4" />
                 <div className="col-12">
-                  <p className="text-center mb-5">
+                  <p className="text-center mb-2 mb-xl-5">
                     No account yet? &nbsp;
                     <Link href="/signup">
                       <a href="#">Sign-up</a>
