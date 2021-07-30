@@ -13,6 +13,15 @@ export default function Home() {
       </Head>
 
       <main>
+      <div className="offcanvas offcanvas-start" tabIndex="100" id="offcanvas" aria-labelledby="offcanvasLabel">
+  <div className="offcanvas-header">
+    <h5 className="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+    <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div className="offcanvas-body">
+    Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+  </div>
+</div>
         <hero className="d-block position-relative vh-100 h-100 mh-100 w-100">
           <Image
             style={{ zIndex: 1 }}

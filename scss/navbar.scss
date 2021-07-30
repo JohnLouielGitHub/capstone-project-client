@@ -12,3 +12,17 @@ nav h1{
 .nav-menu a:hover{
     color: $main-highlight-color!important;
 }
+
+.login-btn{
+    background-color: $main-highlight-color;
+}
+
+.login-btn:hover{
+    background-color: $main-dark;
+    color: $text-white;
+}
+
+.hamburger-menu{
+    height: 78px;
+    background-color: $main-highlight-color;
+}
