@@ -2,19 +2,82 @@ import Link from "next/dist/client/link";
 import Image from "next/dist/client/image";
 import profilePic from '../public/profile-img.png'
 import ProfileAccordion from '../components/ProfileAccordion'
-
+import React, { useState } from 'react';
 const profile = () => {
+    const [accords, setAccords] = useState([
+        {
+            title: "Lawyers Information",
+            detail: [{
+                header: "Roll of Attorney Number:",
+                answer: "12312"
+            },
+            {
+                header: "Date Admitted to the Bar:",
+                answer: "January 28, 1998"
+            },
+            {
+                header: "IBP:",
+                answer: ["072434", "Cavite", "June 12, 2015"]
+            },
+            {
+                header: "MCLE:",
+                answer: ["I have MCLE Compliance", "VI-00563314", "February 22, 2018 - February  22, 2020"]
+            },
+            {
+                header: "Concentration of Law Practice:",
+                answer: ["Corporation and Partnership Law", "Criminal Law", "Family Law"]
+            },
+            {
+                header: "Areas of Practice:",
+                answer: ["Luzon Wide", "Metro Manila", "Visayas Wide"]
+            }],
+            open: true
+        },
+        {
+            title: "Professional Background",
+            detail: [{
+                header: "Language and Dialect:",
+                answer: ["English", "Filipino", "Tagalog"]
+            },
+            {
+                header: "Date Admitted to the Bar:",
+                answer: "January 28, 1998"
+            },
+            {
+                header: "IBP:",
+                answer: ["072434", "Cavite", "June 12, 2015"]
+            },
+            {
+                header: "MCLE:",
+                answer: ["I have MCLE Compliance", "VI-00563314", "February 22, 2018 - February  22, 2020"]
+            },
+            {
+                header: "Concentration of Law Practice:",
+                answer: ["Corporation and Partnership Law", "Criminal Law", "Family Law"]
+            },
+            {
+                header: "Areas of Practice:",
+                answer: ["Luzon Wide", "Metro Manila", "Visayas Wide"]
+            }],
+            open: false
+        },
+        {
+            title: "Online Availability",
+            detail: "",
+            open: false
+        }
+    ])
     return (
         <div>
             <section id="profile-bg" className="h-100">
-                <div className="container pt-5">
+                <div className="container pt-5 mt-5">
                     <div className="row">
                         <div className="col-3">
                             <Image src={profilePic} alt="profile-img" />
                         </div>
                         <div className="col-6 mr-auto d-flex flex-column justify-content-center">
-                            <h3 className="lexyellow">John Doe</h3>
-                            <hr className="lexyellow" />
+                            <h3 className="text-gold">John Doe</h3>
+                            <hr className="text-gold" />
                             <div className="d-flex justify-content-between">
                                 <h4 className="text-light">Business Lawyer</h4>
                                 <div className="d-flex align-items-center justify-content-center">
@@ -25,7 +88,7 @@ const profile = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-8">
+                        <div className="col-12 col-md-8">
                             <div className="text-white py-3">
                                 <div>
                                     <p className="mb-4" >Men of Law Corporate,  believes that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda.  At LawServe, we believe that every person deserves access to justice. That's why we offer safe, affordable advice about any issue you may have without any hidden agenda. </p>
@@ -34,7 +97,7 @@ const profile = () => {
 
                             </div>
                         </div>
-                        <div className="col-3 offset-1 d-flex flex-column justify-content-end pb-3 mb-4">
+                        <div className="col-12 col-md-3 offset-md-1 d-flex flex-column justify-content-end pb-3 mb-4">
                             <button className="btn hero-btn bg-gold mb-3" type="button">
                                 Consult
                             </button>
@@ -60,7 +123,11 @@ const profile = () => {
                 </div>
             </section>
             <section id="profile-tabs" className="dark-bg pt-2">
-                <ProfileAccordion title="Lawyers Information" />
+                {accords.map((accord, i) => (
+                    <>
+                        <ProfileAccordion accord={accord} index={i} />
+                    </>
+                ))}
             </section>
         </div>
     )
