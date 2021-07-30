@@ -25,3 +25,17 @@ nav h1{
         display:block;
     }
 }
+
+.login-btn{
+    background-color: $main-highlight-color;
+}
+
+.login-btn:hover{
+    background-color: $main-dark;
+    color: $text-white;
+}
+
+.hamburger-menu{
+    height: 78px;
+    background-color: $main-highlight-color;
+}

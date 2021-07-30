@@ -10,11 +10,11 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-        <link rel="preconnect" href="https://fonts.gstatic.com/" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@300&display=swap"
-      rel="stylesheet"
-    />
+          <link rel="preconnect" href="https://fonts.gstatic.com/" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@300&display=swap"
+            rel="stylesheet"
+          />
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -24,6 +24,26 @@ class MyDocument extends Document {
         </Head>
         <body>
           <Main />
+
+          <div
+            className="offcanvas offcanvas-bottom"
+            tabIndex="-1"
+            id="offcanvasBottom"
+            aria-labelledby="offcanvasBottomLabel"
+          >
+            <div className="offcanvas-header">
+              <h5 className="offcanvas-title" id="offcanvasBottomLabel">
+                Offcanvas bottom
+              </h5>
+              <button
+                type="button"
+                className="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="offcanvas-body small">...</div>
+          </div>
           <NextScript />
           
         </body>

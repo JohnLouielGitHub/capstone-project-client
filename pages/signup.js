@@ -8,6 +8,7 @@ const Signup = () => {
         <Image
           src="https://previews.123rf.com/images/ijeab/ijeab1805/ijeab180500064/102335348-law-advice-and-legal-services-concept-lawyer-and-attorney-having-team-meeting-at-law-firm-.jpg"
           layout="fill"
+          alt="background-image"
         ></Image>
         <div className="container position-absolute top-50 start-50 translate-middle mt-5 mb-5">
           <div className="row">
@@ -15,7 +16,7 @@ const Signup = () => {
               <div className="gray-bg d-flex align-items-center justify-content-center h-100 position-relative ">
                 <div className="p-3 " style={{ zIndex: 3 }}>
                   <h2 className="lexyellow login-text-title">
-                    We're here for you
+                    We&apos;re here for you
                   </h2>
                   <p className="text-white login-text">
                     Online legal service that provides legal information and
@@ -31,6 +32,7 @@ const Signup = () => {
                   style={{ zIndex: 1 }}
                   src="https://previews.123rf.com/images/opolja/opolja1311/opolja131100148/23580117-a-business-man-with-an-open-hand-ready-to-seal-a-deal.jpg"
                   layout="fill"
+                  alt="sign-up-image"
                 ></Image>
               </div>
             </div>
@@ -141,8 +143,8 @@ const Signup = () => {
                   <div className="col-12">
                     <p className="text-center mb-2 mb-xxl-5">
                       Already have an account? &nbsp;
-                      <Link href="/login">
-                        <a href="#">Login</a>
+                      <Link passHref href="/login">
+                        Login
                       </Link>
                     </p>
                   </div>
