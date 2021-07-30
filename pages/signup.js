@@ -9,9 +9,9 @@ const Signup = () => {
           src="https://previews.123rf.com/images/ijeab/ijeab1805/ijeab180500064/102335348-law-advice-and-legal-services-concept-lawyer-and-attorney-having-team-meeting-at-law-firm-.jpg"
           layout="fill"
         ></Image>
-        <div className="container position-absolute top-50 start-50 translate-middle">
+        <div className="container position-absolute top-50 start-50 translate-middle mt-5 mb-5">
           <div className="row">
-            <div className="col-lg-6 p-0">
+            <div className="col-lg-6 p-0 d-none d-lg-block">
               <div className="gray-bg d-flex align-items-center justify-content-center h-100 position-relative ">
                 <div className="p-3 " style={{ zIndex: 3 }}>
                   <h2 className="lexyellow login-text-title">
@@ -34,14 +34,14 @@ const Signup = () => {
                 ></Image>
               </div>
             </div>
-            <div className="col-lg-6 p-0">
+            <div className="col-lg-6 p-0 ">
               <div className="login-container ">
-                <div className="form-title-container px-5 p-4 dark-bg">
+                <div className="form-title-container px-5 py-2 py-xxl-3 dark-bg">
                   <h2 className="lexyellow mb-3">Register</h2>
-                  <span className="underline d-block bg-gold rounded-pill w-100 px-4"></span>
+                  <span className="underline d-block bg-gold rounded-pill w-100"></span>
                 </div>
-                <div className="login-form gray-bg p-5">
-                  <form action="gray-bg" method="" className="row g-3 p-4">
+                <div className="login-form gray-bg p-4 px-md-5 py-xl-2">
+                  <form action="gray-bg"  className="row g-3 p-xl-4">
                     <div className="col-6">
                       <label>First Name</label>
                       <input
@@ -57,7 +57,7 @@ const Signup = () => {
                         type="text"
                         name="username"
                         className="form-control"
-                        placeholder="Username"
+                        placeholder="Last Name"
                       />
                     </div>
                     <div className="col-12">
@@ -116,18 +116,22 @@ const Signup = () => {
                           </button>
                         </div>
                         <div className="d-flex gap-3">
-                          <button
-                            className="btn dark-bg text-white w-50"
-                            type="button"
-                          >
-                            Sign-up with Google
-                          </button>
-                          <button
-                            className="btn dark-bg text-white w-50"
-                            type="button"
-                          >
-                            Sign-up with Facebook
-                          </button>
+                        <button
+                        className="btn dark-bg text-white w-50 d-flex justify-content-center align-items-center gap-3"
+                        type="button"
+                      >
+                        Sign-up 
+
+                        <Image src="/gmailLogin.svg" alt="Instagram-icon" width={32} height={32}/>
+                      </button>
+                      <button
+                        className="btn dark-bg text-white w-50 d-flex justify-content-center align-items-center gap-3"
+                        type="button"
+                      >
+                        Sign-up 
+
+                        <Image src="/fbLogin.svg" alt="Instagram-icon" width={32} height={32}/>
+                      </button>
                         </div>
                         {/* <button type="submit" className="btn btn-dark float-end">Login</button> */}
                       </div>
@@ -135,7 +139,7 @@ const Signup = () => {
                   </form>
                   <hr className="mt-4" />
                   <div className="col-12">
-                    <p className="text-center mb-5">
+                    <p className="text-center mb-2 mb-xxl-5">
                       Already have an account? &nbsp;
                       <Link href="/login">
                         <a href="#">Login</a>
