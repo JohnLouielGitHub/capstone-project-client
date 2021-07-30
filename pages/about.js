@@ -4,9 +4,14 @@ const About = () => {
     return ( 
         <>
         <section className="about">  
-            <div className=" about-banner text-white bg-success pt-5">
-                Banner img
-                
+            <div className=" about-banner text-white bg-success pt-5 position-relative">
+            <Image
+            className="object-fit"
+            style={{ zIndex: 1 }}
+            src="https://previews.123rf.com/images/ijeab/ijeab1805/ijeab180500064/102335348-law-advice-and-legal-services-concept-lawyer-and-attorney-having-team-meeting-at-law-firm-.jpg"
+            layout="fill"
+            alt="hero-banner-image"
+          ></Image>
                 <div className="position-relative text-center  mt-5 pt-5 "  >
                 <div className="overlay-dark about-overlay position-absolute h-100 w-100">&nbsp;</div>
                 <Image className="about-logo" src="/Logo.svg"  width={445} height={278} alt="logo"/>

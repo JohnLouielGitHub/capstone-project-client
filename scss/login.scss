@@ -26,3 +26,12 @@ a.forgot-pw:hover{
         border-left: 3px solid $main-highlight-color;  
     }
 }
+
+.link-hover{
+    cursor: pointer;
+    color: $text-white;
+}
+
+.link-hover:hover{
+    color:$main-highlight-color;
+}

@@ -14,8 +14,9 @@ const Login = () => {
 
   return (
     <>
-      <div className="position-relative vh-100 h-100 mh-100 w-100">
+      <div className="position-relative vh-100 h-100 mh-100 w-100" >
         <Image
+        className="object-fit"
           src="https://previews.123rf.com/images/ijeab/ijeab1805/ijeab180500064/102335348-law-advice-and-legal-services-concept-lawyer-and-attorney-having-team-meeting-at-law-firm-.jpg"
           layout="fill"
           alt="background-image"
@@ -40,6 +41,7 @@ const Login = () => {
                 layout="fill"
               ></div>
               <Image
+              className="object-fit"
                 style={{ zIndex: 1 }}
                 src="https://previews.123rf.com/images/opolja/opolja1311/opolja131100148/23580117-a-business-man-with-an-open-hand-ready-to-seal-a-deal.jpg"
                 layout="fill"
@@ -112,7 +114,8 @@ const Login = () => {
                       >
                         Login 
 
-                        <Image src="/gmailLogin.svg" alt="Instagram-icon" width={32} height={32}/>
+                        <Image
+                        className="object-fit" src="/gmailLogin.svg" alt="Instagram-icon" width={32} height={32}/>
                       </button>
                       <button
                         className="btn dark-bg text-white w-50 d-flex justify-content-center align-items-center gap-3"
@@ -120,7 +123,8 @@ const Login = () => {
                       >
                         Login  
 
-                        <Image src="/fbLogin.svg" alt="Instagram-icon" width={32} height={32}/>
+                        <Image
+                        className="object-fit" src="/fbLogin.svg" alt="Instagram-icon" width={32} height={32}/>
                       </button>
                     </div>
                   </div>
@@ -128,9 +132,10 @@ const Login = () => {
                 <hr className="mt-4" />
                 <div className="col-12">
                   <p className="text-center mb-2 mb-xl-5">
-                    No account yet? &nbsp;
-                    <Link passHref href="/signup">
-                      Sign-up
+                    
+                    <Link passHref className="link-hover" href="/signup">
+                    <span className="link-hover">No account yet? &nbsp;
+                      Sign-up now!</span>
                     </Link>
                   </p>
                 </div>

@@ -21,6 +21,10 @@ class MyDocument extends Document {
             integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
             crossOrigin="anonymous"
           />
+          <link
+            rel="stylesheet"
+            href="./../node_modules/aos/dist/aos.css"
+          />
         </Head>
         <body>
           <Main />
@@ -44,8 +48,10 @@ class MyDocument extends Document {
             </div>
             <div className="offcanvas-body small">...</div>
           </div>
-          <NextScript />
-          
+          <NextScript>
+
+          </NextScript>
+          <script>AOS.init();</script>
         </body>
       </Html>
     );

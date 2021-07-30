@@ -5,7 +5,7 @@ const Signup = () => {
   return (
     <>
       <div className="position-relative vh-100 h-100 mh-100 w-100">
-        <Image
+        <Image className="object-fit"
           src="https://previews.123rf.com/images/ijeab/ijeab1805/ijeab180500064/102335348-law-advice-and-legal-services-concept-lawyer-and-attorney-having-team-meeting-at-law-firm-.jpg"
           layout="fill"
           alt="background-image"
@@ -28,7 +28,7 @@ const Signup = () => {
                   style={{ zIndex: 2 }}
                   layout="fill"
                 ></div>
-                <Image
+                <Image className="object-fit"
                   style={{ zIndex: 1 }}
                   src="https://previews.123rf.com/images/opolja/opolja1311/opolja131100148/23580117-a-business-man-with-an-open-hand-ready-to-seal-a-deal.jpg"
                   layout="fill"
@@ -102,7 +102,7 @@ const Signup = () => {
                             htmlFor="rememberMe"
                           >
                             {" "}
-                            Remember me
+                            Agree to consent...
                           </label>
                         </div>
                       </div>
@@ -124,7 +124,7 @@ const Signup = () => {
                       >
                         Sign-up 
 
-                        <Image src="/gmailLogin.svg" alt="Instagram-icon" width={32} height={32}/>
+                        <Image className="object-fit" src="/gmailLogin.svg" alt="Instagram-icon" width={32} height={32}/>
                       </button>
                       <button
                         className="btn dark-bg text-white w-50 d-flex justify-content-center align-items-center gap-3"
@@ -132,7 +132,7 @@ const Signup = () => {
                       >
                         Sign-up 
 
-                        <Image src="/fbLogin.svg" alt="Instagram-icon" width={32} height={32}/>
+                        <Image className="object-fit" src="/fbLogin.svg" alt="Instagram-icon" width={32} height={32}/>
                       </button>
                         </div>
                         {/* <button type="submit" className="btn btn-dark float-end">Login</button> */}
@@ -142,9 +142,9 @@ const Signup = () => {
                   <hr className="mt-4" />
                   <div className="col-12">
                     <p className="text-center mb-2 mb-xxl-5">
-                      Already have an account? &nbsp;
-                      <Link passHref href="/login">
-                        Login
+                      
+                      <Link passHref className="text-gold link-hover" href="/login">
+                        <span className="link-hover">Already have an account?</span>
                       </Link>
                     </p>
                   </div>

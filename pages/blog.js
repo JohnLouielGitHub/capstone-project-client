@@ -14,6 +14,7 @@ export default function Blog() {
       <main>
         <hero className="d-block position-relative vh-100 h-100 mh-100 w-100">
           <Image
+          className="object-fit"
             style={{ zIndex: -1 }}
             src="https://previews.123rf.com/images/adiruch/adiruch1804/adiruch180400460/99704263-businessman-shaking-hands-judge-gavel-with-justice-lawyers-trust-promise-win-the-case.jpg"
             layout="fill"
@@ -45,6 +46,7 @@ export default function Blog() {
             <div className="row home__blog mb-6">
               <div className="col-12 ">
                 {/* <Image
+                className="object-fit"
                   className="d-inline float-end m-2"
                   src="https://previews.123rf.com/images/adiruch/adiruch1804/adiruch180400460/99704263-businessman-shaking-hands-judge-gavel-with-justice-lawyers-trust-promise-win-the-case.jpg"
                   width={360}

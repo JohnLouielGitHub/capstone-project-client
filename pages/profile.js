@@ -74,7 +74,7 @@ const Profile = () => {
                 <div className="container pt-5 mt-5">
                     <div className="row">
                         <div className="col-3">
-                            <Image src={profilePic} alt="profile-img" />
+                            <Image className="object-fit" src={profilePic} alt="profile-img" />
                         </div>
                         <div className="col-6 mr-auto d-flex flex-column justify-content-center">
                             <h3 className="text-gold">John Doe</h3>
@@ -82,10 +82,10 @@ const Profile = () => {
                             <div className="d-flex justify-content-between">
                                 <h4 className="text-light">Business Lawyer</h4>
                                 <div className="d-flex align-items-center justify-content-center">
-                                    <a className=" text-decoration-none text-white px-2"><Image src="/instagram.svg" alt="Instagram-icon" width={16} height={16} /><span className="ms-2"></span></a>
-                                    <a className=" text-decoration-none text-white px-2"><Image src="/linkedin.svg" alt="LinkedIn-icon" width={16} height={16} /><span className="ms-2"></span></a>
-                                    <a className=" text-decoration-none text-white px-2"><Image src="/facebook.svg" alt="Facebook-icon" width={16} height={16} /><span className="ms-2"></span></a>
-                                    <a className=" text-decoration-none text-white px-2"><Image src="/twitter.svg" alt="Twitter-icon" width={16} height={16} /><span className="ms-2"></span></a>
+                                    <a className=" text-decoration-none text-white px-2"><Image className="object-fit" src="/instagram.svg" alt="Instagram-icon" width={16} height={16} /><span className="ms-2"></span></a>
+                                    <a className=" text-decoration-none text-white px-2"><Image className="object-fit" src="/linkedin.svg" alt="LinkedIn-icon" width={16} height={16} /><span className="ms-2"></span></a>
+                                    <a className=" text-decoration-none text-white px-2"><Image className="object-fit" src="/facebook.svg" alt="Facebook-icon" width={16} height={16} /><span className="ms-2"></span></a>
+                                    <a className=" text-decoration-none text-white px-2"><Image className="object-fit" src="/twitter.svg" alt="Twitter-icon" width={16} height={16} /><span className="ms-2"></span></a>
                                 </div>
                             </div>
                         </div>

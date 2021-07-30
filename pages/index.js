@@ -1,12 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
 export default function Home() {
-
-  
-
   return (
     <div>
       <Head>
@@ -18,6 +14,7 @@ export default function Home() {
       <main>
         <hero className="d-block position-relative vh-100 h-100 mh-100 w-100">
           <Image
+            className="object-fit"
             style={{ zIndex: 1 }}
             src="https://previews.123rf.com/images/ijeab/ijeab1805/ijeab180500064/102335348-law-advice-and-legal-services-concept-lawyer-and-attorney-having-team-meeting-at-law-firm-.jpg"
             layout="fill"
@@ -167,6 +164,7 @@ export default function Home() {
               style={{ zIndex: 2 }}
             ></div>
             <Image
+              className="object-fit"
               style={{ zIndex: 1 }}
               src="https://previews.123rf.com/images/sabthai/sabthai1712/sabthai171200356/92363465-business-man-and-lawyer-looking-to-the-business-contract-and-learn-for-sign-contract-paper.jpg"
               layout="fill"
@@ -428,7 +426,10 @@ export default function Home() {
 
         <blogsection id="home__blog-section" className="bg-gray">
           <div className="container-fluid bg-dark mb-6">
-            <div className="container">
+            <div
+              className="container"
+              data-aos="fade-in"
+            >
               <div className="home__section-banner row d-flex py-5 py-md-0">
                 <h2 className="col-12 col-md-4 display-6 h-100 text-light fw-bold font-main py-2 py-md-5 m-0 my-auto">
                   Blogs Section
@@ -444,6 +445,7 @@ export default function Home() {
             <div className="row home__blog mb-6">
               <div className="col-12 col-md-6 position-relative">
                 <Image
+                  className="object-fit"
                   src="https://previews.123rf.com/images/pe3check/pe3check1711/pe3check171100127/89322764-general-data-protection-regulation-gdpr-on-mobile-phone.jpg"
                   layout="fill"
                   alt="blog-image"
@@ -459,19 +461,19 @@ export default function Home() {
                 </span>
                 <p className="fw-bold text-white mt-3">
                   At LawServe, we believe that every person deserves access to
-                  justice. That&apos;s why we offer safe, affordable advice about any
-                  issue you may have without any hidden agenda. At LawServe, we
-                  believe that every person deserves access to justice. That&apos;s
-                  why we offer safe, affordable advice about any issue you may
-                  have without any hidden agenda.
+                  justice. That&apos;s why we offer safe, affordable advice
+                  about any issue you may have without any hidden agenda. At
+                  LawServe, we believe that every person deserves access to
+                  justice. That&apos;s why we offer safe, affordable advice
+                  about any issue you may have without any hidden agenda.
                   <br></br>
                   <br></br>
                   At LawServe, we believe that every person deserves access to
-                  justice. That&apos;s why we offer safe, affordable advice about any
-                  issue you may have without any hidden agenda. At LawServe, we
-                  believe that every person deserves access to justice. That&apos;s
-                  why we offer safe, affordable advice about any issue you may
-                  have without any hidden agenda.
+                  justice. That&apos;s why we offer safe, affordable advice
+                  about any issue you may have without any hidden agenda. At
+                  LawServe, we believe that every person deserves access to
+                  justice. That&apos;s why we offer safe, affordable advice
+                  about any issue you may have without any hidden agenda.
                 </p>
                 <div className="d-flex flex-wrap justify-content-between">
                   <Link passHref href="/blog">
@@ -489,7 +491,8 @@ export default function Home() {
                       to="route"
                       target="_blank"
                       rel="noopener noreferrer"
-                      passHref href="https://www.instagram.com/"
+                      passHref
+                      href="https://www.instagram.com/"
                     >
                       <span className="social-icon">
                         <svg
@@ -507,7 +510,8 @@ export default function Home() {
                       to="route"
                       target="_blank"
                       rel="noopener noreferrer"
-                      passHref href="https://www.linkedin.com/"
+                      passHref
+                      href="https://www.linkedin.com/"
                     >
                       <span className="social-icon">
                         <svg
@@ -525,7 +529,8 @@ export default function Home() {
                       to="route"
                       target="_blank"
                       rel="noopener noreferrer"
-                      passHref href="https://facebook.com"
+                      passHref
+                      href="https://facebook.com"
                     >
                       <span className="social-icon">
                         <svg
@@ -543,7 +548,8 @@ export default function Home() {
                       to="route"
                       target="_blank"
                       rel="noopener noreferrer"
-                      passHref href="https://twitter.com/"
+                      passHref
+                      href="https://twitter.com/"
                     >
                       <span className="social-icon">
                         <svg
@@ -564,6 +570,7 @@ export default function Home() {
             <div className="row home__blog mb-6">
               <div className="col-12 col-md-6 position-relative">
                 <Image
+                  className="object-fit"
                   src="https://previews.123rf.com/images/adiruch/adiruch1804/adiruch180400460/99704263-businessman-shaking-hands-judge-gavel-with-justice-lawyers-trust-promise-win-the-case.jpg"
                   layout="fill"
                   alt="blog-image"
@@ -579,19 +586,19 @@ export default function Home() {
                 </span>
                 <p className="fw-bold text-white mt-3">
                   At LawServe, we believe that every person deserves access to
-                  justice. That&apos;s why we offer safe, affordable advice about any
-                  issue you may have without any hidden agenda. At LawServe, we
-                  believe that every person deserves access to justice. That&apos;s
-                  why we offer safe, affordable advice about any issue you may
-                  have without any hidden agenda.
+                  justice. That&apos;s why we offer safe, affordable advice
+                  about any issue you may have without any hidden agenda. At
+                  LawServe, we believe that every person deserves access to
+                  justice. That&apos;s why we offer safe, affordable advice
+                  about any issue you may have without any hidden agenda.
                   <br></br>
                   <br></br>
                   At LawServe, we believe that every person deserves access to
-                  justice. That&apos;s why we offer safe, affordable advice about any
-                  issue you may have without any hidden agenda. At LawServe, we
-                  believe that every person deserves access to justice. That&apos;s
-                  why we offer safe, affordable advice about any issue you may
-                  have without any hidden agenda.
+                  justice. That&apos;s why we offer safe, affordable advice
+                  about any issue you may have without any hidden agenda. At
+                  LawServe, we believe that every person deserves access to
+                  justice. That&apos;s why we offer safe, affordable advice
+                  about any issue you may have without any hidden agenda.
                 </p>
 
                 <div className="d-flex flex-wrap justify-content-between">
@@ -610,7 +617,8 @@ export default function Home() {
                       to="route"
                       target="_blank"
                       rel="noopener noreferrer"
-                      passHref href="https://www.instagram.com/"
+                      passHref
+                      href="https://www.instagram.com/"
                     >
                       <span className="social-icon">
                         <svg
@@ -628,7 +636,8 @@ export default function Home() {
                       to="route"
                       target="_blank"
                       rel="noopener noreferrer"
-                      passHref href="https://www.linkedin.com/"
+                      passHref
+                      href="https://www.linkedin.com/"
                     >
                       <span className="social-icon">
                         <svg
@@ -646,7 +655,8 @@ export default function Home() {
                       to="route"
                       target="_blank"
                       rel="noopener noreferrer"
-                      passHref href="https://facebook.com"
+                      passHref
+                      href="https://facebook.com"
                     >
                       <span className="social-icon">
                         <svg
@@ -664,7 +674,8 @@ export default function Home() {
                       to="route"
                       target="_blank"
                       rel="noopener noreferrer"
-                      passHref href="https://twitter.com/"
+                      passHref
+                      href="https://twitter.com/"
                     >
                       <span className="social-icon">
                         <svg

@@ -15,6 +15,7 @@ export default function Blogs() {
       <main>
         <hero className="d-block position-relative vh-100 h-100 mh-100 w-100">
           <Image
+          className="object-fit"
             style={{ zIndex: -1 }}
             src="https://previews.123rf.com/images/ijeab/ijeab1805/ijeab180500064/102335348-law-advice-and-legal-services-concept-lawyer-and-attorney-having-team-meeting-at-law-firm-.jpg"
             layout="fill"
@@ -77,6 +78,7 @@ export default function Blogs() {
             <div className="row home__blog mb-6">
               <div className="col-12 col-md-6 position-relative">
                 <Image
+                className="object-fit"
                   src="https://previews.123rf.com/images/pe3check/pe3check1711/pe3check171100127/89322764-general-data-protection-regulation-gdpr-on-mobile-phone.jpg"
                   layout="fill"
                   alt="blog-image"
@@ -197,6 +199,7 @@ export default function Blogs() {
             <div className="row home__blog mb-6">
               <div className="col-12 col-md-6 position-relative">
                 <Image
+                className="object-fit"
                   src="https://previews.123rf.com/images/adiruch/adiruch1804/adiruch180400460/99704263-businessman-shaking-hands-judge-gavel-with-justice-lawyers-trust-promise-win-the-case.jpg"
                   layout="fill"
                   alt="blog-image"
@@ -316,6 +319,7 @@ export default function Blogs() {
             <div className="row home__blog mb-6">
               <div className="col-12 col-md-6 position-relative ">
                 <Image
+                className="object-fit"
                   src="https://previews.123rf.com/images/antoniodiaz/antoniodiaz1602/antoniodiaz160200219/52580751-flat-lay-of-a-lawyer-s-wooden-desk-with-a-computer-a-notepad-a-contract-and-some-glasses.jpg"
                   layout="fill"
                   alt="blog-image"
