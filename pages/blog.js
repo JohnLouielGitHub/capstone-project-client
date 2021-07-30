@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
 export default function Blog() {
@@ -15,6 +14,7 @@ export default function Blog() {
       <main>
         <hero className="d-block position-relative vh-100 h-100 mh-100 w-100">
           <Image
+
             style={{ zIndex: -1 }}
             src="https://previews.123rf.com/images/adiruch/adiruch1804/adiruch180400460/99704263-businessman-shaking-hands-judge-gavel-with-justice-lawyers-trust-promise-win-the-case.jpg"
             layout="fill"
@@ -44,7 +44,13 @@ export default function Blog() {
           <div className="container mt-6">
             <div className="row home__blog mb-6">
               <div className="col-12 ">
-                <p className="col fw-bold text-white mt-3 flex-wrap">
+                  <img
+                    className="float-end m-2"
+                    src="https://previews.123rf.com/images/adiruch/adiruch1804/adiruch180400460/99704263-businessman-shaking-hands-judge-gavel-with-justice-lawyers-trust-promise-win-the-case.jpg"
+                    width={360}
+                    height={360}
+                  />
+                <p className="fw-bold text-white">
                   At LawServe, we believe that every person deserves access to
                   justice. That's why we offer safe, affordable advice about any
                   issue you may have without any hidden agenda. At LawServe, we
@@ -88,14 +94,6 @@ export default function Blog() {
                   why we offer safe, affordable advice about any issue you may
                   have without any hidden agenda.
                 </p>
-                <span>
-                  <Image
-                    className="col"
-                    src="https://previews.123rf.com/images/adiruch/adiruch1804/adiruch180400460/99704263-businessman-shaking-hands-judge-gavel-with-justice-lawyers-trust-promise-win-the-case.jpg"
-                    width={360}
-                    height={360}
-                  />
-                </span>
 
                 <p className="col fw-bold text-white mt-3">
                   At LawServe, we believe that every person deserves access to

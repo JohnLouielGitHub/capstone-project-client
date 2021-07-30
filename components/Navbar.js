@@ -5,32 +5,78 @@ import ActiveLink from "./ActiveLink";
 import React from "react";
 import styled from "styled-components";
 
+const StyledBurger = styled.button`
+top: 20px;
+right: 30px;
+position: absolute;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+width: 2rem;
+height: 2rem;
+background: transparent;
+border: none;
+cursor: pointer;
+padding: 0;
+z-index: 10;
+
+&:focus {
+  outline: none;
+}
+
+div {
+  width: 2rem;
+  height: 0.25rem;
+  background: ${({ open }) => (open ? "#0D0C1D" : "#EFFFFA")};
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+
+  :first-child {
+    transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+  }
+
+  :nth-child(2) {
+    opacity: ${({ open }) => (open ? "0" : "1")};
+    transform: ${({ open }) =>
+      open ? "translateX(20px)" : "translateX(0)"};
+  }
+
+  :nth-child(3) {
+    transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+  }
+}
+`;
+
+
+const StyledMenu = styled.nav`
+display: flex;
+flex-direction: column;
+background: #effffa;
+transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-200%)")};
+width: 50vw;
+height: 100vh;
+text-align: left;
+position: absolute;
+top: 0;
+right: 0;
+transition: transform 0.5s ease-in-out;
+
+@media (max-width: 576px) {
+  width: 50vw;
+}
+`;
+
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
   const node = React.useRef();
   const router = useRouter();
 
-  const StyledMenu = styled.nav`
-    display: flex;
-    flex-direction: column;
-    background: #effffa;
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-500%)")};
-    width: 50vw;
-    height: 100vh;
-    text-align: left;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transition: transform 0.5s ease-in-out;
-
-    @media (max-width: 576px) {
-      width: 50vw;
-    }
-  `;
 
   const Menu = ({ open }) => {
     return (
-      <StyledMenu className="bg-dark" open={open}>
+      <StyledMenu className="styled-menu bg-dark" open={open}>
         <div className="col-12">
           <div className="hamburger-menu"></div>
         <ul className="nav-menu bg-dark h-100 justify-content-lg-between align-items-center px-4 py-3">
@@ -68,7 +114,7 @@ const Navbar = () => {
               </li>
               <li className="list-unstyled mb-3">
                 <ActiveLink
-                  href="/Everyday Law"
+                  href="/blogs"
                   className="text-decoration-none text-white"
                 >
                   Everyday Law
@@ -89,51 +135,6 @@ const Navbar = () => {
       </StyledMenu>
     );
   };
-
-  const StyledBurger = styled.button`
-    top: 20px;
-    right: 30px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 10;
-
-    &:focus {
-      outline: none;
-    }
-
-    div {
-      width: 2rem;
-      height: 0.25rem;
-      background: ${({ open }) => (open ? "#0D0C1D" : "#EFFFFA")};
-      border-radius: 10px;
-      transition: all 0.3s linear;
-      position: relative;
-      transform-origin: 1px;
-
-      :first-child {
-        transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
-      }
-
-      :nth-child(2) {
-        opacity: ${({ open }) => (open ? "0" : "1")};
-        transform: ${({ open }) =>
-          open ? "translateX(20px)" : "translateX(0)"};
-      }
-
-      :nth-child(3) {
-        transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
-      }
-    }
-  `;
-
   const Burger = ({ open, setOpen }) => {
     return (
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
@@ -149,7 +150,7 @@ const Navbar = () => {
       className="gray-bg position-fixed top-0 w-100 border-bottom border-2 border-dark"
       style={{ zIndex: 10 }}
     >
-      <div className="h-100">
+      <div className="container-md h-100">
         <div className="row h-100">
           <div className="col-6 col-md-3 col-lg-4">
             <div className="logo d-flex h-100 justify-content-center justify-content-md-start align-items-center">
@@ -203,7 +204,7 @@ const Navbar = () => {
               </li>
               <li className="text-center list-unstyled">
                 <ActiveLink
-                  href="/Everyday Law"
+                  href="/blogs"
                   className="text-decoration-none text-white"
                 >
                   Everyday Law
